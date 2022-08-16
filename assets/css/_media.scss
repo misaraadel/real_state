@@ -1,0 +1,112 @@
+@media (max-width: 999px) {
+  .navbar {
+    .hamburger {
+      display: block !important;
+    }
+
+    .navbar-nav {
+      width: 100% !important;
+      height: calc(100vh - 120px);
+      position: absolute;
+      top: 120px;
+      right: -100%;
+      z-index: 999;
+      background-color: var(--primary-color);
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      padding: 20px 15px;
+      transition: all .3s linear;
+      
+      li {
+        margin: 0px 0px 20px 0px !important;
+
+        a:hover {
+          &::after {
+            width: 100px !important;
+          }
+        }
+      }
+
+      &.active-nav {
+        right: 0px !important;
+      }
+    }
+  }
+
+  .about-us .content {
+    padding: 20px 10px !important;
+
+    &::after, &::before {
+      width: 100%;
+    }
+
+    &::after {
+      top: 0 !important;
+      height: 40% !important;
+    }
+
+    &::before {
+      bottom: 0px !important;
+      top: unset !important;
+      height: 57% !important;
+    }
+
+    .data p {
+      width: 100% !important;
+    }
+  }
+
+  .contact-us {
+    h1 {
+      width: 100% !important;
+    }
+
+    .content {
+      padding: 20px 10px !important;
+
+      .form-contain {
+        padding: 20px 10px !important;
+      }
+
+      .contact-data {
+        padding: 0px 10px !important;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .join .content .data p {
+    font-size: 15px;
+    padding: 0px 20px;
+  }
+
+  .partners,
+  .general-section {
+    padding: 30px 0px;
+    &.pattern {
+      &::after, &::before {
+        opacity: .3;
+      }
+    }
+  }
+
+  header {
+    padding: 70px 0px;
+
+    h1 {
+      font-size: 25px !important;
+    }
+  }
+
+  .join .content .data h1 {
+    font-size: 35px !important;
+  }
+
+  .services .heading,
+  .heading {
+    margin-bottom: 40px !important;
+  }
+}
