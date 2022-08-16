@@ -109,4 +109,25 @@
   .heading {
     margin-bottom: 40px !important;
   }
+
+  .article-contain {
+    margin-top: -150px;
+
+    .article-img {
+      height: 300px;
+    }
+
+    h1 {
+      font-size: 25px !important;
+    }
+
+    .article-head {
+      margin-bottom: 30px !important;
+    }
+  }
+
+  .sub-header.large-header {
+    padding-top: 30px !important;
+    padding-bottom: 200px !important;
+  }
 }
